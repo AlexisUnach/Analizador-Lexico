@@ -19,6 +19,13 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 table {
@@ -35,4 +42,16 @@ th, td {
 
 th {
     background-color: #f4f4f4;
+}
+
+#sintacticoResult {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
 }

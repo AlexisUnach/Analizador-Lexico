@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analizador Léxico</title>
+    <title>Analizador Léxico y Sintáctico</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Analizador Léxico</h1>
-    <textarea id="inputText"></textarea>
-    <button onclick="analizar()">Analizar</button>
+    <h1>Analizador Léxico y Sintáctico</h1>
+    <textarea id="inputText" placeholder="Ingresa tu código aquí..."></textarea>
+    <button onclick="analizar()">Analizar Código</button>
 
-    <h2>Resultados</h2>
-    <table id="resultTable">
+    <h2>Resultados del Análisis Léxico</h2>
+    <table id="lexicoTable">
         <thead>
             <tr>
                 <th>Token</th>
                 <th>Tipo</th>
             </tr>
         </thead>
-        <tbody>
-        </tbody>
+        <tbody></tbody>
     </table>
 
-    <script src="analizador.js"></script>
+    <h2>Resultados del Análisis Sintáctico</h2>
+    <div id="sintacticoResult"></div>
+
+    <script src="lexico.js"></script>
+    <script src="sintactico.js"></script>
 </body>
 </html>
