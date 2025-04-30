@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>Analizador Léxico y Sintáctico</h1>
-    <textarea id="inputText" placeholder="Ingresa tu código aquí..."></textarea>
+    <textarea id="inputText" rows="10" cols="50" placeholder="Ingresa tu código aquí..."></textarea>
+    <br>
     <button onclick="analizar()">Analizar Código</button>
 
     <h2>Resultados del Análisis Léxico</h2>
@@ -22,10 +23,13 @@
         <tbody></tbody>
     </table>
 
-    <h2>Resultados del Análisis Sintáctico</h2>
+    <h2>Resultados del Análisis Sintáctico y Semántico</h2>
     <div id="sintacticoResult"></div>
 
     <script src="lexico.js"></script>
     <script src="sintactico.js"></script>
+    <script>
+        console.log("Scripts cargados correctamente");
+    </script>
 </body>
 </html>
